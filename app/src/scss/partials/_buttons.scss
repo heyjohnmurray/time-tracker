@@ -4,7 +4,7 @@ $button-color: #fff;
 button {
   background-color: $button-bkg;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   color: $button-color;
   padding: 1em 0;
   font-size: 1rem;
@@ -12,7 +12,7 @@ button {
 
   &:hover {
     transition: all .5s;
-    background-color: darken($button-bkg, 10%);
+    background-color: lighten($button-bkg, 10%);
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
   }
 }
