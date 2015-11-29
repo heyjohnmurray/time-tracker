@@ -1,7 +1,9 @@
 /* colors */
-$blue: #369;
-$light-blue: #86bbd8;
-$dark-blue: #2f4858;
-$grey: #cfcfcf;
-$green: #1bc889;
-$red: #d00;
+$color--blue: #369;
+$color--light-blue: #86bbd8;
+$color--dark-blue: #2f4858;
+$color--grey: #cfcfcf;
+$color--light-grey: #f4f2f3;
+$color--green: #1bc889;
+$color--dark-grey: darken($color--grey, 35%);
+$color--red: #d00;

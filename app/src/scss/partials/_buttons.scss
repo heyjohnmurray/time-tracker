@@ -1,14 +1,14 @@
-$button-base-bkg: $blue;
-$button-base-hover: $dark-blue;
-$button-play-bkg: $green;
-$button-pause-bkg: $light-blue;
-$button-color: #fff;
+$button-base-bkg: $color--blue;
+$button-base-hover: $color--dark-blue;
+$button-play-bkg: $color--green;
+$button-pause-bkg: $color--light-blue;
+$color--button: #fff;
 
 button {
   background-color: $button-base-bkg;
   border: none;
   border-radius: 3px;
-  color: $button-color;
+  color: $color--button;
   padding: 1em 0;
   font-size: 1rem;
   text-transform: uppercase;

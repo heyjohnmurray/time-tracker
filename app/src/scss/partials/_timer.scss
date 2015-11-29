@@ -1,18 +1,23 @@
+$color--timer-output: $color--dark-grey;
 $timer-max-size: 20rem;
-$rounded-value: 20rem;
+$radius-value: 20rem;
+$color--timer-bkg: $color--light-grey;
 
 .timer {
   width: calc(#{$timer-max-size} + 1.25em);
   margin: 0 auto;
+  background-color: $color--timer-bkg;
 
   .time-output {
-    font-size: 4rem;
+    font-size: 4.5rem;
+    font-weight: $ultra-bold;
+    color: $color--timer-output;
     width: $timer-max-size;
     height: $timer-max-size;
     line-height: $timer-max-size;
     background: #f7f7f7;
     border: 10px solid darken(#f7f7f7, 15%);
-    border-radius: $rounded-value;
+    border-radius: $radius-value;
     margin: 1em 0;
     box-shadow: $global-shadow;
     text-align: center;

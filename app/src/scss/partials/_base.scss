@@ -3,6 +3,9 @@
 @import 'partials/colors';
 @import 'partials/fonts';
 
+$color--body-bkg: $color--light-grey;
+
 body {
+  background-color: $color--body-bkg;
   font-family: 'Source Sans Pro', sans-serif;
 }
