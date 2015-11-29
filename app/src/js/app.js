@@ -1,21 +1,20 @@
-// timer object
-// should be some sort of counting logic
-// setTimeOut to always update the seconds/minutes/hours
-// function to write updated time to the DOM
-// find a way to add a description to and save timed sessions
-
+var timerOutput = document.querySelector('.js-time-output');
 var playBtn = document.querySelector('.js-play');
 var pauseBtn = document.querySelector('.js-pause');
 var stopBtn = document.querySelector('.js-stop');
 
-playBtn.addEventListener('click', function(e) {
-  console.log('play');
-});
+function currentTime() {
+  var time = new Date();
+  var seconds = time.getSeconds();
+  var minutes = time.getMinutes();
+  var hours = time.getHours();
 
-pauseBtn.addEventListener('click', function(e) {
-  console.log('pause');
-});
+  timerOutput.innerHTML = seconds;
+  console.log(seconds);
+}
 
-stopBtn.addEventListener('click', function(e) {
-  console.log('stop');
-});
+setInterval(function() {
+  currentTime();
+}, 1000);
+
+playBtn.addEventListener('click', function() {});
