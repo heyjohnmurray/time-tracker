@@ -30,7 +30,6 @@ gulp.task('sass', function() {
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(concat('main.css'))
     .pipe(sass({outputStyle: 'nested'}).on('error', sass.logError))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.styles.dest))
