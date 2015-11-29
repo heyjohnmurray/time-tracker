@@ -1,0 +1,1 @@
+var playBtn=document.querySelector(".js-play"),pauseBtn=document.querySelector(".js-pause"),stopBtn=document.querySelector(".js-stop");playBtn.addEventListener("click",function(e){console.log("play")}),pauseBtn.addEventListener("click",function(e){console.log("pause")}),stopBtn.addEventListener("click",function(e){console.log("stop")});
