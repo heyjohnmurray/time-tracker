@@ -1,1 +1,2 @@
-// compile js
+alert('hey');
+console.log('hey');
