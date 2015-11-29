@@ -1,0 +1,38 @@
+$button-base-bkg: $color--blue;
+$button-base-hover: $color--dark-blue;
+$button-play-bkg: $color--green;
+$button-pause-bkg: $color--light-blue;
+$button-stop-bkg: $color--red;
+$color--button: #fff;
+
+button {
+  background-color: $button-base-bkg;
+  border: none;
+  border-radius: 3px;
+  color: $color--button;
+  padding: 1em 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+
+  &:hover {
+    transition: all .5s;
+    @include button-hover-color($button-base-bkg);
+    box-shadow: $global-shadow;
+  }
+
+  &.play {
+    background-color: $button-play-bkg;
+
+    &:hover {
+      @include button-hover-color($button-play-bkg);
+    }
+  }
+
+  &.stop {
+    background-color: $button-stop-bkg;
+
+    &:hover {
+      @include button-hover-color($button-stop-bkg);
+    }
+  }
+}

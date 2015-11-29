@@ -1,0 +1,33 @@
+$color--timer-output: #859BB0;
+$timer-max-size: 20rem;
+$radius-value: 20rem;
+
+.timer {
+  width: calc(#{$timer-max-size} + 1.25em);
+  margin: 0 auto;
+
+  .time-output {
+    font-size: 4.5rem;
+    font-weight: $ultra-bold;
+    color: $color--timer-output;
+    width: $timer-max-size;
+    height: $timer-max-size;
+    line-height: $timer-max-size;
+    border: 10px solid $color--timer-output;
+    border-radius: $radius-value;
+    margin: .25em 0;
+    box-shadow: $global-shadow;
+    text-align: center;
+  }
+}
+
+.controls-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+
+  button {
+    margin: 1em .5em;
+    width: $timer-max-size;
+  }
+}
