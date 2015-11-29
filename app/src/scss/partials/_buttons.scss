@@ -1,8 +1,11 @@
-$button-bkg: $blue;
+$button-base-bkg: $blue;
+$button-base-hover: $dark-blue;
+$button-play-bkg: $green;
+$button-pause-bkg: $light-blue;
 $button-color: #fff;
 
 button {
-  background-color: $button-bkg;
+  background-color: $button-base-bkg;
   border: none;
   border-radius: 3px;
   color: $button-color;
@@ -12,7 +15,16 @@ button {
 
   &:hover {
     transition: all .5s;
-    background-color: lighten($button-bkg, 10%);
+    @include button-hover-color($button-base-bkg);
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+  }
+
+
+  &.play {
+    background-color: $button-play-bkg;
+
+    &:hover {
+      @include button-hover-color($button-play-bkg);
+    }
   }
 }

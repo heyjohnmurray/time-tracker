@@ -1,0 +1,3 @@
+@mixin button-hover-color($color, $value: 10%) {
+  background-color: lighten($color, $value);
+}
