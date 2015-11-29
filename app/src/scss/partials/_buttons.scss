@@ -2,6 +2,7 @@ $button-base-bkg: $color--blue;
 $button-base-hover: $color--dark-blue;
 $button-play-bkg: $color--green;
 $button-pause-bkg: $color--light-blue;
+$button-stop-bkg: $color--red;
 $color--button: #fff;
 
 button {
@@ -19,12 +20,19 @@ button {
     box-shadow: $global-shadow;
   }
 
-
   &.play {
     background-color: $button-play-bkg;
 
     &:hover {
       @include button-hover-color($button-play-bkg);
+    }
+  }
+
+  &.stop {
+    background-color: $button-stop-bkg;
+
+    &:hover {
+      @include button-hover-color($button-stop-bkg);
     }
   }
 }
