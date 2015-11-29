@@ -1,16 +1,2 @@
-.timer {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  width: $timer-max-size;
-  margin: 0 auto;
-
-  .time-output {
-    width: $timer-max-size;
-    height: $timer-max-size;
-    background: #f7f7f7;
-    border: 10px solid darken(#f7f7f7, 15%);
-    border-radius: $rounded-value;
-    margin: 3em 0;
-  }
-}
+@import 'partials/buttons';
+@import 'partials/timer';
