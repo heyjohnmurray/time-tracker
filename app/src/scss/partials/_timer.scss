@@ -2,10 +2,7 @@ $timer-max-size: 20em;
 $rounded-value: 20em;
 
 .timer {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  width: $timer-max-size;
+  width: calc(#{$timer-max-size} + 1.25em);
   margin: 0 auto;
 
   .time-output {
@@ -16,9 +13,15 @@ $rounded-value: 20em;
     border-radius: $rounded-value;
     margin: 1em 0;
   }
+}
+
+.controls-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
 
   button {
-    margin-bottom: 1em;
+    margin: 1em .5em;
     width: $timer-max-size;
   }
 }
