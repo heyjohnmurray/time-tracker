@@ -16,7 +16,7 @@ button {
   &:hover {
     transition: all .5s;
     @include button-hover-color($button-base-bkg);
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.22);
+    box-shadow: $global-shadow;
   }
 
 

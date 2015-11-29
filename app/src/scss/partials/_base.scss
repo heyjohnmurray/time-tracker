@@ -1,2 +1,8 @@
 @import 'partials/mixins';
+@import 'partials/vars';
 @import 'partials/colors';
+@import 'partials/fonts';
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
