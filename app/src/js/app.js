@@ -4,7 +4,7 @@ var pauseBtn = document.querySelector('.js-pause');
 var stopBtn = document.querySelector('.js-stop');
 var time = new Date();
 var seconds = 0;
-var minutes = 58;
+var minutes = 0;
 var hours = 0;
 var interval;
 
