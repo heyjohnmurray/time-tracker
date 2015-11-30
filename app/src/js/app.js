@@ -28,9 +28,11 @@ function timer() {
 
 playBtn.addEventListener('click', timer);
 
-stopBtn.addEventListener('click', function() {
+pauseBtn.addEventListener('click', function() {
   clearInterval(interval);
+});
 
+stopBtn.addEventListener('click', function() {
   hours = 0;
   minutes = 0;
   seconds = 0;
