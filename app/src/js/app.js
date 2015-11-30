@@ -4,7 +4,7 @@ var pauseBtn = document.querySelector('.js-pause');
 var stopBtn = document.querySelector('.js-stop');
 var time = new Date();
 var seconds = 0;
-var minutes = 0;
+var minutes = 58;
 var hours = 0;
 var interval;
 
@@ -13,10 +13,12 @@ function timing() {
 
   if (seconds > 60) {
     minutes++;
+    seconds = 0;
   }
 
-  if (minutes > 60) {
+  if (minutes > 59) {
     hours++;
+    minutes = 0;
   }
 
   timerOutput.innerHTML = hours + ' : ' + minutes + ' : ' + seconds;
