@@ -38,9 +38,6 @@ pauseBtn.addEventListener('click', function() {
 });
 
 stopBtn.addEventListener('click', function() {
-  hours = 0;
-  minutes = 0;
-  seconds = 0;
   clearInterval(interval);
-  timerOutput.innerHTML = hours + ' : ' + minutes + ' : ' + seconds;
+  timerOutput.innerHTML = '00:00:00';
 });
