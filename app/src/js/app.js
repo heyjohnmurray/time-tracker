@@ -2,19 +2,18 @@ var timerOutput = document.querySelector('.js-time-output');
 var playBtn = document.querySelector('.js-play');
 var pauseBtn = document.querySelector('.js-pause');
 var stopBtn = document.querySelector('.js-stop');
+var time = new Date();
+var seconds = 0;
+var minutes = 0;
+var hours = 0;
 
-function currentTime() {
-  var time = new Date();
-  var seconds = time.getSeconds();
-  var minutes = time.getMinutes();
-  var hours = time.getHours();
-
+function timing() {
+  seconds++;
   timerOutput.innerHTML = seconds;
-  console.log(seconds);
 }
 
-setInterval(function() {
-  currentTime();
-}, 1000);
+function timer() {
+  setInterval(timing, 1000);
+}
 
-playBtn.addEventListener('click', function() {});
+playBtn.addEventListener('click', timer);
