@@ -6,23 +6,34 @@ var time = new Date();
 var seconds = 0;
 var minutes = 0;
 var hours = 0;
+var interval;
 
 function timing() {
   seconds++;
 
-  if(seconds > 60) {
+  if (seconds > 60) {
     minutes++;
   }
 
-  if(minutes > 60) {
-    hourse++;
+  if (minutes > 60) {
+    hours++;
   }
 
   timerOutput.innerHTML = hours + ' : ' + minutes + ' : ' + seconds;
 }
 
 function timer() {
-  setInterval(timing, 1000);
+  interval = setInterval(timing, 1000);
 }
 
 playBtn.addEventListener('click', timer);
+
+stopBtn.addEventListener('click', function() {
+  clearInterval(interval);
+
+  hours = 0;
+  minutes = 0;
+  seconds = 0;
+
+  timerOutput.innerHTML = hours + ' : ' + minutes + ' : ' + seconds;
+});
