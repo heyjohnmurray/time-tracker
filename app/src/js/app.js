@@ -11,14 +11,18 @@ var interval;
 function timing() {
   seconds++;
 
-  if (seconds > 60) {
+  if (seconds >= 60) {
     minutes++;
     seconds = 0;
   }
 
-  if (minutes > 59) {
+  if (minutes >= 60) {
     hours++;
     minutes = 0;
+  }
+
+  if (seconds < 9) {
+    seconds = '0' + seconds;
   }
 
   timerOutput.innerHTML = hours + ' : ' + minutes + ' : ' + seconds;
