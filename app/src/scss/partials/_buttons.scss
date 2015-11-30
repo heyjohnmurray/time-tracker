@@ -3,6 +3,7 @@ $button-base-hover: $color--dark-blue;
 $button-play-bkg: $color--green;
 $button-pause-bkg: $color--light-blue;
 $button-stop-bkg: $color--red;
+$button-submit-bkg: $color--blue-grey;
 $color--button: #fff;
 
 button {
@@ -33,6 +34,15 @@ button {
 
     &:hover {
       @include button-hover-color($button-stop-bkg);
+    }
+  }
+
+  &[type=submit] {
+    background-color: $color--blue-grey;
+    width: 100%;
+
+    &:hover {
+    @include button-hover-color($color--blue-grey);
     }
   }
 }
