@@ -19,15 +19,11 @@ function timing() {
     hours++;
   }
 
-  updateTimer();
+  timerOutput.innerHTML = hours + ' : ' + minutes + ' : ' + seconds;
 }
 
 function timer() {
   interval = setInterval(timing, 1000);
-}
-
-function updateTimer() {
-  timerOutput.innerHTML = hours + ' : ' + minutes + ' : ' + seconds;
 }
 
 playBtn.addEventListener('click', timer);
@@ -41,5 +37,5 @@ stopBtn.addEventListener('click', function() {
   minutes = 0;
   seconds = 0;
   clearInterval(interval);
-  updateTimer();
+  timerOutput.innerHTML = hours + ' : ' + minutes + ' : ' + seconds;
 });
