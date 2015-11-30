@@ -9,7 +9,12 @@ var hours = 0;
 
 function timing() {
   seconds++;
-  timerOutput.innerHTML = seconds;
+
+  if(seconds > 60) {
+    minutes++;
+  }
+
+  timerOutput.innerHTML = minutes + ' : ' + seconds;
 }
 
 function timer() {
