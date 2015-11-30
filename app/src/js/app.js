@@ -1,3 +1,5 @@
+// helpful link http://jsfiddle.net/oukjfavu/
+
 var timerOutput = document.querySelector('.js-time-output');
 var playBtn = document.querySelector('.js-play');
 var pauseBtn = document.querySelector('.js-pause');
