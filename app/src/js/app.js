@@ -1,4 +1,5 @@
 // helpful link http://jsfiddle.net/oukjfavu/
+// https://s-media-cache-ak0.pinimg.com/236x/ed/18/a6/ed18a6a3e596786e94b8bef70cb25c5f.jpg
 
 var timerOutput = document.querySelector('.js-time-output');
 var playBtn = document.querySelector('.js-play');
