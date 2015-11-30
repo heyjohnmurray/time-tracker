@@ -14,7 +14,11 @@ function timing() {
     minutes++;
   }
 
-  timerOutput.innerHTML = minutes + ' : ' + seconds;
+  if(minutes > 60) {
+    hourse++;
+  }
+
+  timerOutput.innerHTML = hours + ' : ' + minutes + ' : ' + seconds;
 }
 
 function timer() {
