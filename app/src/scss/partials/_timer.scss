@@ -1,4 +1,4 @@
-$color--timer-output: #859BB0;
+$color--timer-output: $color--timer-primary;
 $timer-max-size: 20rem;
 $radius-value: 20rem;
 
@@ -30,5 +30,26 @@ $radius-value: 20rem;
   button {
     margin: 1em .5em;
     width: $timer-max-size;
+  }
+}
+
+.description {
+  display: none;
+  margin: 0 .3em;
+
+  textarea {
+    background-color: $color--body-bkg;
+    border: 3px solid $color--timer-primary;
+    width: $timer-max-size;
+    height: 7em;
+    margin-bottom: .5em;
+  }
+
+  button[type=submit] {
+    width: 100%;
+  }
+
+  &.is-visible {
+    display: block;
   }
 }

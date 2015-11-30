@@ -5,6 +5,7 @@ var timerOutput = document.querySelector('.js-time-output');
 var playBtn = document.querySelector('.js-play');
 var pauseBtn = document.querySelector('.js-pause');
 var stopBtn = document.querySelector('.js-stop');
+var description = document.querySelector('.js-description');
 var time = new Date();
 var seconds = 0;
 var minutes = 0;
@@ -31,6 +32,11 @@ function timer() {
   interval = setInterval(timing, 1000);
 }
 
+function showElement(button) {
+  button.classList.add('is-visible');
+  console.log(button.classList);
+}
+
 playBtn.addEventListener('click', timer);
 
 pauseBtn.addEventListener('click', function() {
@@ -39,5 +45,5 @@ pauseBtn.addEventListener('click', function() {
 
 stopBtn.addEventListener('click', function() {
   clearInterval(interval);
-  timerOutput.innerHTML = '00:00:00';
+  showElement(description);
 });
