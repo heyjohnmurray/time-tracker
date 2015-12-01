@@ -1,8 +1,8 @@
 {
   "name": "time-tracker",
   "version": "1.0.0",
-  "description": "time tracker app built in express js",
-  "main": "gulpfile.js",
+  "description": "time tracker built with express js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
