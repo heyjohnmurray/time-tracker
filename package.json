@@ -2,7 +2,7 @@
   "name": "time-tracker",
   "version": "1.0.0",
   "description": "time tracker built with express js",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/heyjohnmurray/time-tracker/issues"
   },
-  "homepage": "https://github.com/heyjohnmurray/time-tracker#readme"
+  "homepage": "https://github.com/heyjohnmurray/time-tracker#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
