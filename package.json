@@ -1,0 +1,19 @@
+{
+  "name": "time-tracker",
+  "version": "1.0.0",
+  "description": "time tracker app built in express js",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heyjohnmurray/time-tracker.git"
+  },
+  "author": "John Murray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/heyjohnmurray/time-tracker/issues"
+  },
+  "homepage": "https://github.com/heyjohnmurray/time-tracker#readme"
+}
